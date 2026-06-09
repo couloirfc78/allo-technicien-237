@@ -1,0 +1,24 @@
+{
+  "name": "allo-technicien-237",
+  "version": "1.0.0",
+  "description": "Plateforme de mise en relation entre clients et techniciens spécialisés",
+  "private": true,
+  "workspaces": [
+    "apps/mobile",
+    "apps/web",
+    "apps/backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.16",
+    "typescript": "^5.3.3"
+  }
+}
